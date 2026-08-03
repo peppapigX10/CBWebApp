@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting Blessings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Import font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="navbar-container">
+            <ul>
+                <li><a href="#Home">HOME</a></li>
+                <li><a href="#About">ABOUT</a></ul>
+                <li><a href="#FAQ">FAQ</a></li>
+                <div class="aqua-btns">
+                    <li><a href="#Post"><button type="button" class="plus-btn">
+                        <img src="../static/img/plus-btn-img.png" alt="plus-btn"></button></a></li>
+                    <li><a href="#View"><button type="button" class="view-btn">VIEW BLESSINGS</button></a></li>
+                </div>
+
+            </ul>
+        </div>
+    </nav>
+    
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
