@@ -23,7 +23,6 @@ html body {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-
 }
 
 .title-container {
@@ -38,8 +37,6 @@ html body {
 .title-text-container {
     display: inline-block;
     width: max-content;
-
-
 }
 
 
@@ -58,7 +55,7 @@ html body {
 
 
 .navbar-container {
-    padding: 30px 40px;
+    padding: 30px 20px;
     display:flex;
     gap: 20px;
 
@@ -67,23 +64,32 @@ html body {
 
 .navbar-container  li {
     list-style-type: none;
+    color: #372100;
     
 }
 
 .navbar-container a {
+    
     text-decoration:none;
+    padding-left: 12px;
     color: #372100;
 
 }
 
+.navbar-container a:hover {
+    color: #00C9AE;
+    text-decoration:none;
+}
+
 .navbar-container  ul {
+    color: #372100;
     display: flex;
     margin: 0;
     padding: 0;
     overflow: hidden;
     display: flex;
     flex-direction: row;
-
+    
 
 }
 
@@ -91,7 +97,6 @@ html body {
 
 .aqua-btns {
     display: flex;
-    background-color: aqua;
 }
 
 .navbar2-container {
@@ -99,12 +104,16 @@ html body {
 }
 
 .plus-btn, .view-btn {
+    margin-right: 12px;
     color: #00C9AE;
     border: 2px solid #00C9AE;
     background-color: transparent;
     padding: 4px 7px;
     display: inline-block;
     
+}
+.plus-btn:hover, .view-btn:hover {
+    border: 2px solid #372100;
 }
 
 .plus-btn {
