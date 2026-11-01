@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    {% extends 'base.html' %}
+<!-- extend base.html maybe in a diff version? -->
     {% block content %}
         <div class="title-container">
             <div class="title-text-container">
@@ -27,6 +27,22 @@
         </div>
         <div class="under-title-container">
             <img src="../static/img/blue-butterfly.png" alt="blue butterfly">
+        </div>
+        <div class="submit-container">
+            <form action="/submit" method="POST">
+                <textarea class=text-box name="text" maxlength="280" placeholder="What are you thankful for?" required></textarea>
+                <p></p>
+                <button class="submit-btn" type="submit">Share</button>
+            </form>
+        </div>
+
+        <div class="blessing-grid">
+            {% for b in blessings %}
+                <div class="blessing">
+                    <p>{{ b.text }}</p>
+                    <small>{{ b.date.strftime('%b %d, %Y') }}</small>
+                </div>
+            {% endfor %}
         </div>
     {% endblock %}
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

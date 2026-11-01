@@ -100,7 +100,7 @@ html body {
 }
 
 .navbar2-container {
-    display: flex
+    display: flex;
 }
 
 .plus-btn, .view-btn {
@@ -137,4 +137,51 @@ html body {
 
 .under-title-container img {
     padding: 20px 20px;
+}
+
+.blessing-grid {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.blessing {
+    border: 2px solid #00C9AE;
+    border-radius: 10px;
+    margin:20px;
+    padding: 13px 20px;
+    width: fit-content;
+}
+
+.blessing p, small {
+    color: #00C9AE;
+}
+
+.submit-container {
+    border: 2px solid #372100;
+    border-radius: 10px;
+    margin:20px;
+    padding: 13px 20px;
+    width: fit-content;
+}
+
+.text-box {
+    border: 2px solid #372100;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.submit-btn {
+    border: 2px solid #372100;
+    border-radius: 10px;
+    padding: 2px 5px;
+    background-color: #F2EDE5;
+    color: #372100;
+    padding:5px 10px;
+
+}
+
+.submit-btn:hover {
+    border: 2px solid #e6b372;
+
+
 }
